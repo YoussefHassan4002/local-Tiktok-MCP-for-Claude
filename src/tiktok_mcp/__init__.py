@@ -1,2 +1,4 @@
 def main() -> None:
-    print("Hello from tiktok-mcp!")
+    from .server import main as run
+
+    run()

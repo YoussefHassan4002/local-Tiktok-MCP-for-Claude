@@ -1,7 +1,7 @@
 [project]
 name = "tiktok-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "Local MCP server that lets Claude analyze public TikTok accounts: profiles, video lists, transcripts, frames and stats"
 readme = "README.md"
 authors = [
     { name = "youssefhassan4002", email = "youssefgamer203@gmail.com" }
@@ -24,3 +24,8 @@ tiktok-mcp = "tiktok_mcp:main"
 [build-system]
 requires = ["uv_build>=0.12.20,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
