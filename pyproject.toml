@@ -1,0 +1,26 @@
+[project]
+name = "tiktok-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "youssefhassan4002", email = "youssefgamer203@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "faster-whisper>=1.2.1",
+    "imageio-ffmpeg>=0.6.0",
+    "mcp>=1.10",
+    "numpy>=2.5.3",
+    "onnxruntime>=1.30.0",
+    "playwright>=1.63.0",
+    "rapidocr>=3.9.2",
+    "yt-dlp[curl-cffi,default]>=2026.8.19",
+]
+
+[project.scripts]
+tiktok-mcp = "tiktok_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
